@@ -104,7 +104,7 @@ def deletePost(postID,email=USER_EMAIL, password=USER_PASSWORD):
         #print(response)
 
 
-def deleteComment(post,email='itz_bigz_d@yahoo.com', password='JUmF77g2FFsK5ixLv'):
+def deleteComment(post,email=USER_EMAIL, password=USER_PASSWORD):
     
     '''
     Attempt to login to Facebook. Returns user ID, xs token and
