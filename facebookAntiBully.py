@@ -13,7 +13,7 @@ app = Flask(__name__)
 #Creation Date: 2/11/2017 Hackpoly 2017
 
 
-ACCESS_TOKEN = "EAAR5InXoLR0BAHMRrYX4iGSyCYQRCSZBfjL3g9mtWwFpG35A1BZAfw0OhqBaTzIArWJRNr3NjGOlWyagTMgIZAN35i6TTYYjEKOPEyRxvLkgNY87NpBHjZAsaJy1YI73q0BocARZAnIr6YnjK4tbSIH2Yw9pCVMZBiILi7byPKSVZCXKy6Eem2H"
+ACCESS_TOKEN = ENTER_ACCESS_TOKEN_HERE
 
 
 def checkFeed():
@@ -46,7 +46,7 @@ def handle_verification():
     return request.args['hub.challenge']
 
 
-def deletePost(postID,email='itz_bigz_d@yahoo.com', password='JUmF77g2FFsK5ixLv'):
+def deletePost(postID,email=USER_EMAIL, password=USER_PASSWORD):
     
     '''
     Attempt to login to Facebook. Returns user ID, xs token and
